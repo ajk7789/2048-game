@@ -1,0 +1,91 @@
+/*
+Author: Alex Kruger
+
+Main CSS file for the project
+*/
+
+
+/* style for the body (everything except page head) */
+body {
+    background-color: rgb(233, 206, 171);
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: center;
+}
+
+/* style for the main header */
+h1 {
+    color: black;
+    background-color: rgb(233, 206, 171);
+}
+
+/* style for the instructions box */
+#instructions {
+    background-color: rgba(230, 165, 81, 0.856);
+    max-width: 400px;
+    border-width: medium;
+    border-style: solid;
+    margin: 10px auto 10px auto;
+    padding: 10px
+}
+
+/* style for the game board */
+.grid {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    height: 300px;
+    background-color:white;
+}
+
+/* style for the elements in the grid */
+.grid div {
+    width: 69px;
+    height: 70px;
+    border-width: medium;
+    border-style: solid;
+    background-color: rgba(230, 165, 81, 0.856);
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* style for the toolbar above the board */
+.toolbar {
+    background-color:  rgba(230, 165, 81, 0.856);
+    max-width: 400px;
+    border-width: medium;
+    border-style: solid;
+    margin: 10px auto 10px auto;
+    padding: 10px
+}
+
+/* includes the area with the game board and arrows */
+.center {
+    padding: 50px;
+}
+
+/* style for each arrow */
+#leftArrow {
+    position: absolute;
+    top: 362px;
+    left: 540px;
+}
+
+#rightArrow {
+    position: absolute;
+    top: 362px;
+    right: 540px;
+}
+
+#upArrow {
+    position: absolute;
+    top: 165px;
+    left: 742px;
+}
+
+#downArrow {
+    position: absolute;
+    top: 550px;
+    left: 742px;
+}

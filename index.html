@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--- title displayed in top of window/tab -->
+        <title>Alex's 2048 Game!</title>
+        <!-- links the css file to this html file -->
+        <link href="2048_style.css" type="text/css"
+            rel="stylesheet" />
+    </head>
+    <body>
+        <!-- page header -->
+        <h1>Alex's 2048 Game!</h1>
+        <!-- anything in parentheses is a placeholder for JavaScript stuff -->
+        <div class='toolbar'>
+            <div class='score-title'>Score:</div>
+            <span id='score'>0</span>
+            <br>(Press N to Start a New Game)
+        </div>
+            
+        <br>
+        <!-- center of the screen, including arrows and board -->
+        <div class='center'>
+            <!-- arrow images for added style -->
+            <img id='upArrow' src="upArrow.png" alt="Up Arrow"
+            width="50"/>
+            <img id='leftArrow' src="leftArrow.png" alt="Left Arrow"
+                height="50"/>
+            <!-- the game board grid -->
+            <div class="grid">
+            </div>
+            <img id='rightArrow' src="rightArrow.png" alt="Left Arrow"
+                height="50"/>
+            <br><img id='downArrow' src="downArrow.png" alt="Down Arrow"
+            width="50"/>
+        </div>
+        
+        </p>
+
+        <div id="result"></div>
+
+        <!-- instructions box, has its own id for css styles -->
+        <p id="instructions"> <b>Instructions:</b> Use the arrow keys
+            to slide the blocks. When blocks of equal value
+            collide, their numbers combine. Each time you make
+            a move, one more block is added to the board. Try
+            to reach the highest block value possible without running
+            out of moves!</p>
+        <script src="2048_app.js" charset="utf-8"></script>
+    </body>
+</html>
